@@ -23,9 +23,9 @@ bot.on('text', async (msg)=>{
     await axios.post("http://localhost:3000/api/BotMemories/storeMemory",{
         input: msg.text
     })
-    
-    console.log(new Date(msg.date.now()))
 
+    console.log(new Date(msg.date.now()))
+    console.log(new Date(msg.date.now()))
 
     // const body=await axios.get("http://localhost:3000/api/BotMemories/rememberAll")
 
