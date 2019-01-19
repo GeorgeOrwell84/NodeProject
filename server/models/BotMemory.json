@@ -1,0 +1,35 @@
+{
+  "name": "BotMemory",
+  "plural": "BotMemories",
+  "base": "PersistedModel",
+  "options": {
+    "idInjection": "false",
+    "validateUpsert": true
+  },
+  "properties": {
+    "input": {
+      "type": "string",
+      "required": true
+    },
+    "output": {
+      "type": "string",
+      "required": true
+    },
+    "rating":{
+      "type":"number",
+      "required":true
+    },
+    "when":{
+      "type":"Date",
+      "required":true
+    },
+    "what":{
+      "type":"string",
+      "required":true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
