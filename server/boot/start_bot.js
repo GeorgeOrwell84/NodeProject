@@ -20,6 +20,7 @@ const bot= new telebot({
 bot.on('text', async (msg)=>{
 
     console.log("MESSAGE RECEIVED!")
+    console.log(msg.text)
     msg.reply.text("HELLO BOY")
 
     // await axios.post("http://localhost:3000/api/BotMemories/storeMemory",{
