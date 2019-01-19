@@ -23,6 +23,7 @@ bot.on('text', async (msg)=>{
     await axios.post("http://localhost:3000/api/BotMemories/storeMemory",{
         input: msg.text
     })
+    
     console.log(new Date(msg.date.now()))
 
 
