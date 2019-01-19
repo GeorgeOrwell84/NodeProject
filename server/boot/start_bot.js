@@ -20,18 +20,20 @@ const bot= new telebot({
 bot.on('text', async (msg)=>{
 
     console.log("MESSAGE RECEIVED!")
-    await axios.post("http://localhost:3000/api/BotMemories/storeMemory",{
-        input: msg.text
-    })
+    msg.reply.text("HELLO BOY")
 
-    // console.log(new Date(msg.date.now()))
-    // console.log(new Date(msg.date.now()))
+    // await axios.post("http://localhost:3000/api/BotMemories/storeMemory",{
+    //     input: msg.text
+    // })
 
-     const body=await axios.get("http://localhost:3000/api/BotMemories/rememberAll")
+    // // console.log(new Date(msg.date.now()))
+    // // console.log(new Date(msg.date.now()))
 
-    body.data.memories.forEach(element => {
-         msg.reply.text(element.content)    
-     })
+    // const body=await axios.get("http://localhost:3000/api/BotMemories/rememberAll")
+
+    // body.data.memories.forEach(element => {
+    //      msg.reply.text(element.content)    
+    //  })
 
 })
 

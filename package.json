@@ -10,7 +10,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "start": "server.js",
+    "start": "node .",
     "posttest": "npm run lint"
   },
   "dependencies": {
